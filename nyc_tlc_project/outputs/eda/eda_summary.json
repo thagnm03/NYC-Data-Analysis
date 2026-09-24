@@ -1,0 +1,63 @@
+{
+  "generated_at_utc": "2026-09-18T02:29:01.536159+00:00",
+  "scope": "development_panel_only",
+  "panel_rows": 1144746,
+  "zones": 261,
+  "time_blocks": 4386,
+  "target_sum": 89642441,
+  "years": [
+    2024,
+    2025
+  ],
+  "final_test_rows_used": 0,
+  "activity_tier_counts": {
+    "Low": 87,
+    "Medium": 87,
+    "High": 87
+  },
+  "top_10_zone_share_pct": 35.92308022937483,
+  "top_20_zone_share_pct": 60.010592527260606,
+  "zones_to_reach_80_pct": 33,
+  "zone_hhi": 0.023530365467313834,
+  "time_of_week_profile_correlation_2024_2025": 0.9967058127161916,
+  "daily_mean_change_2025_vs_2024_pct": 18.84170442370985,
+  "zero_cell_pct_by_year": {
+    "2024": 33.47134113574664,
+    "2025": 19.725502545530887
+  },
+  "previous_week_lag": {
+    "pooled_raw_correlation": 0.9696802420810686,
+    "pooled_within_zone_centered_correlation": 0.91808643191877,
+    "median_zone_correlation": 0.6287112886542698
+  },
+  "largest_daily_change_vs_previous_week": {
+    "date": "2024-12-05T00:00:00",
+    "trips": 147955,
+    "previous_week_trips": 77002.0,
+    "change_vs_previous_week": 70953.0,
+    "change_vs_previous_week_pct": 92.14435988675619,
+    "absolute_change_pct": 92.14435988675619
+  },
+  "output_tables": [
+    "activity_tier_profile.csv",
+    "activity_tiers.csv",
+    "borough_summary.csv",
+    "daily_demand.csv",
+    "lag_correlations.csv",
+    "largest_daily_changes_vs_previous_week.csv",
+    "monthly_demand.csv",
+    "time_of_week_profile.csv",
+    "yearly_demand.csv",
+    "zone_summary.csv"
+  ],
+  "output_figures": [
+    "activity_tier_zero_rate.png",
+    "daily_demand.png",
+    "lag_correlations.png",
+    "monthly_daily_average.png",
+    "time_of_week_heatmaps.png",
+    "top20_zone_share.png",
+    "zone_concentration.png",
+    "zone_year_comparison.png"
+  ]
+}

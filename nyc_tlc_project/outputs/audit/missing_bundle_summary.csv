@@ -1,0 +1,6 @@
+metric,rows
+all_five_null,15703126
+partial_bundle,0
+payment_zero_and_bundle,15703126
+payment_zero_without_bundle,0
+bundle_without_payment_zero,0

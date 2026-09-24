@@ -1,0 +1,31 @@
+{
+  "generated_at_utc": "2026-09-18T03:08:19.812814+00:00",
+  "scope": "final_test_2026_01_through_2026_05",
+  "raw_files_used": [
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2026-01.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2026-02.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2026-03.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2026-04.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2026-05.parquet"
+  ],
+  "raw_rows": 18999282,
+  "exact_duplicate_rows_removed": 0,
+  "clean_target_rows_all_valid_zones": 18969497,
+  "target_rows_excluded_by_frozen_zone_universe": 0,
+  "panel_target_sum": 18969497,
+  "panel_rows": 236466,
+  "zones": 261,
+  "time_blocks": 906,
+  "zero_cells": 47012,
+  "zero_cell_pct": 19.88108226975548,
+  "first_block": "2026-01-01T00:00:00",
+  "last_block": "2026-05-31T20:00:00",
+  "final_panel_file": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\processed\\zone_4h_panel_final_test.parquet",
+  "final_modeling_frame_file": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\processed\\modeling_frame_final_test.parquet",
+  "final_modeling_frame_bytes": 4060207,
+  "modeling_config_sha256": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7",
+  "training_config_sha256": "3bda0eb733295ba242f196697dadf469d82f80c09ae29714b459351a52fcf181",
+  "model_selection_sha256": "10a2a7c394154e2313544c7785a5a386247d9c1295cd97241df82d36941a517f",
+  "formal_selected_method": "baseline_previous_week",
+  "frozen_ridge_alpha": 1000.0
+}

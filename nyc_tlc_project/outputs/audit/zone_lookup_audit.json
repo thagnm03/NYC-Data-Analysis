@@ -1,0 +1,26 @@
+{
+  "file": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\taxi_zone_lookup.csv",
+  "rows": 265,
+  "columns": [
+    "LocationID",
+    "Borough",
+    "Zone",
+    "service_zone"
+  ],
+  "location_id_null": 0,
+  "location_id_duplicates": 0,
+  "location_id_min": 1,
+  "location_id_max": 265,
+  "contains_264_unknown": true,
+  "contains_265_outside_nyc": true,
+  "borough_counts": {
+    "Queens": 69,
+    "Manhattan": 69,
+    "Brooklyn": 61,
+    "Bronx": 43,
+    "Staten Island": 20,
+    "EWR": 1,
+    "Unknown": 1,
+    "nan": 1
+  }
+}

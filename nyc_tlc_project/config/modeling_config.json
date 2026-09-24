@@ -1,0 +1,211 @@
+{
+  "version": "1.0",
+  "status": "locked_before_model_fitting",
+  "panel_path": "../data/processed/zone_4h_panel_development.parquet",
+  "modeling_frame_path": "../data/processed/modeling_frame_development.parquet",
+  "output_dir": "../outputs/modeling_spec",
+  "development_start": "2024-01-01 00:00:00",
+  "development_end_exclusive": "2026-01-01 00:00:00",
+  "final_test_start": "2026-01-01 00:00:00",
+  "final_test_end_exclusive": "2026-06-01 00:00:00",
+  "block_hours": 4,
+  "prediction_time": "immediately_before_block_start",
+  "forecast_horizon_blocks": 1,
+  "operational_feed_assumption": "stakeholder_has_internal_pickup_history_through_the_previous_completed_block",
+  "target": "trips",
+  "identifier_columns": ["zone_id", "block_start"],
+  "evaluation_metadata_columns": ["borough", "zone_name", "service_zone"],
+  "calendar_features": [
+    {
+      "name": "month_of_year",
+      "dtype": "categorical",
+      "definition": "calendar month number from block_start",
+      "availability": "known_before_prediction"
+    },
+    {
+      "name": "day_of_week",
+      "dtype": "categorical",
+      "definition": "Monday=0 through Sunday=6 from block_start",
+      "availability": "known_before_prediction"
+    },
+    {
+      "name": "block_hour",
+      "dtype": "categorical",
+      "definition": "block start hour in {0,4,8,12,16,20}",
+      "availability": "known_before_prediction"
+    },
+    {
+      "name": "is_holiday",
+      "dtype": "numeric_binary",
+      "definition": "1 on an actual-date US federal holiday in the locked calendar, otherwise 0; observed substitute weekdays are not added",
+      "availability": "known_before_prediction"
+    },
+    {
+      "name": "time_index_days",
+      "dtype": "numeric_continuous",
+      "definition": "days elapsed since 2024-01-01 00:00:00",
+      "availability": "known_before_prediction"
+    }
+  ],
+  "history_features": [
+    {
+      "name": "lag_1",
+      "operation": "lag",
+      "lag_blocks": 1,
+      "definition": "pickup count for the same zone in the previous 4-hour block"
+    },
+    {
+      "name": "lag_6",
+      "operation": "lag",
+      "lag_blocks": 6,
+      "definition": "pickup count for the same zone in the same block on the previous day"
+    },
+    {
+      "name": "lag_42",
+      "operation": "lag",
+      "lag_blocks": 42,
+      "definition": "pickup count for the same zone in the same block on the previous week"
+    },
+    {
+      "name": "lag_84",
+      "operation": "lag",
+      "lag_blocks": 84,
+      "definition": "pickup count for the same zone in the same block two weeks earlier"
+    },
+    {
+      "name": "lag_168",
+      "operation": "lag",
+      "lag_blocks": 168,
+      "definition": "pickup count for the same zone in the same block four weeks earlier"
+    },
+    {
+      "name": "seasonal_mean_4w",
+      "operation": "mean_of_lags",
+      "lag_blocks": [42, 84, 126, 168],
+      "definition": "mean of the same zone-time block over the previous four weeks"
+    },
+    {
+      "name": "recent_mean_6",
+      "operation": "shifted_rolling",
+      "shift_blocks": 1,
+      "window_blocks": 6,
+      "statistic": "mean",
+      "definition": "mean of the previous six completed blocks for the same zone"
+    },
+    {
+      "name": "recent_mean_42",
+      "operation": "shifted_rolling",
+      "shift_blocks": 1,
+      "window_blocks": 42,
+      "statistic": "mean",
+      "definition": "mean of the previous 42 completed blocks for the same zone"
+    },
+    {
+      "name": "recent_std_42",
+      "operation": "shifted_rolling",
+      "shift_blocks": 1,
+      "window_blocks": 42,
+      "statistic": "std_ddof_0",
+      "definition": "population standard deviation of the previous 42 completed blocks for the same zone"
+    }
+  ],
+  "holiday_dates": [
+    "2024-01-01", "2024-01-15", "2024-02-19", "2024-05-27", "2024-06-19", "2024-07-04", "2024-09-02", "2024-10-14", "2024-11-11", "2024-11-28", "2024-12-25",
+    "2025-01-01", "2025-01-20", "2025-02-17", "2025-05-26", "2025-06-19", "2025-07-04", "2025-09-01", "2025-10-13", "2025-11-11", "2025-11-27", "2025-12-25",
+    "2026-01-01", "2026-01-19", "2026-02-16", "2026-05-25", "2026-06-19", "2026-07-04", "2026-09-07", "2026-10-12", "2026-11-11", "2026-11-26", "2026-12-25"
+  ],
+  "baselines": [
+    {"name": "previous_block", "prediction_column": "lag_1"},
+    {"name": "previous_day", "prediction_column": "lag_6"},
+    {"name": "previous_week", "prediction_column": "lag_42", "primary": true},
+    {"name": "seasonal_mean_4w", "prediction_column": "seasonal_mean_4w"}
+  ],
+  "models": [
+    {
+      "name": "simple_linear_regression",
+      "family": "LinearRegression",
+      "categorical_features": [],
+      "numeric_features": ["lag_42"]
+    },
+    {
+      "name": "multiple_linear_regression",
+      "family": "LinearRegression",
+      "categorical_features": ["zone_id", "month_of_year", "day_of_week", "block_hour"],
+      "numeric_features": ["is_holiday", "time_index_days", "lag_1", "lag_6", "lag_42", "lag_84", "lag_168", "seasonal_mean_4w", "recent_mean_6", "recent_mean_42", "recent_std_42"]
+    },
+    {
+      "name": "ridge_regression",
+      "family": "Ridge",
+      "categorical_features": ["zone_id", "month_of_year", "day_of_week", "block_hour"],
+      "numeric_features": ["is_holiday", "time_index_days", "lag_1", "lag_6", "lag_42", "lag_84", "lag_168", "seasonal_mean_4w", "recent_mean_6", "recent_mean_42", "recent_std_42"],
+      "alpha_grid": [0.01, 0.1, 1.0, 10.0, 100.0, 1000.0]
+    },
+    {
+      "name": "polynomial_regression_degree_2",
+      "family": "LinearRegression_with_PolynomialFeatures",
+      "degree": 2,
+      "include_bias": false,
+      "categorical_main_effects": ["zone_id", "month_of_year", "day_of_week", "block_hour"],
+      "numeric_main_effects": ["is_holiday", "lag_84", "lag_168", "recent_mean_6", "recent_std_42"],
+      "polynomial_numeric_features": ["time_index_days", "lag_1", "lag_6", "lag_42", "seasonal_mean_4w", "recent_mean_42"],
+      "retention_rule": "retain only if residual curvature gate passes, mean MAE is at least 1 percent below the best non-polynomial regression, and all global model-selection rules pass"
+    }
+  ],
+  "preprocessing": {
+    "one_hot_encoder": "fit_on_fold_training_only; drop=first; handle_unknown=ignore",
+    "numeric_imputation": "none; score only rows where the locked common feature set is complete",
+    "standard_scaling": "fit_on_fold_training_only for Ridge and polynomial numeric terms",
+    "prediction_postprocessing": "clip predictions below zero to zero before every metric"
+  },
+  "validation": {
+    "method": "expanding_window_rolling_origin",
+    "within_validation_update": "model parameters stay fixed within a fold; lag and rolling inputs are refreshed from actual pickup history after each completed block",
+    "common_sample_rule": "all baselines and candidate models are compared on identical validation rows where every locked feature is available",
+    "folds": [
+      {"fold": "fold_1", "train_start": "2024-01-01 00:00:00", "train_end_exclusive": "2025-01-01 00:00:00", "validation_start": "2025-01-01 00:00:00", "validation_end_exclusive": "2025-04-01 00:00:00"},
+      {"fold": "fold_2", "train_start": "2024-01-01 00:00:00", "train_end_exclusive": "2025-04-01 00:00:00", "validation_start": "2025-04-01 00:00:00", "validation_end_exclusive": "2025-07-01 00:00:00"},
+      {"fold": "fold_3", "train_start": "2024-01-01 00:00:00", "train_end_exclusive": "2025-07-01 00:00:00", "validation_start": "2025-07-01 00:00:00", "validation_end_exclusive": "2025-10-01 00:00:00"},
+      {"fold": "fold_4", "train_start": "2024-01-01 00:00:00", "train_end_exclusive": "2025-10-01 00:00:00", "validation_start": "2025-10-01 00:00:00", "validation_end_exclusive": "2026-01-01 00:00:00"}
+    ]
+  },
+  "metrics": {
+    "primary": "MAE",
+    "supporting": ["MSE", "RMSE", "WAPE", "R2"],
+    "fold_aggregation": "unweighted_mean_of_four_fold_metrics",
+    "uplift_formula": "100 * (previous_week_MAE - candidate_MAE) / previous_week_MAE",
+    "zero_wape_denominator": "report_null"
+  },
+  "segments": {
+    "activity_tier": "within each fold, rank zones by target sum using only that fold's training rows and split into three equal-count groups Low, Medium, High",
+    "peak_period": "within each fold, use training rows only to rank the 42 day-of-week x block-hour cells; the top 14 cells by mean target are Peak and the remaining 28 are Off-peak",
+    "weekday_weekend": "Saturday and Sunday are Weekend; Monday through Friday are Weekday",
+    "borough": "fixed lookup metadata; evaluation only, not a model feature",
+    "target_state": "Zero when observed target equals zero; Positive otherwise; evaluation only"
+  },
+  "model_selection": {
+    "replacement_baseline": "previous_week",
+    "rules": [
+      "candidate mean MAE across four folds must be lower than previous_week mean MAE",
+      "candidate must beat previous_week MAE in at least three of four folds",
+      "candidate mean Low-tier MAE must not exceed 1.05 times previous_week mean Low-tier MAE",
+      "added complexity must be explainable"
+    ],
+    "low_tier_degradation_threshold_pct": 5.0,
+    "tie_breaker": "choose the simpler model; if complexity is equal, choose lower mean RMSE",
+    "ridge_alpha_selection": "choose the alpha with the lowest unweighted mean MAE across the same four development folds; break ties with the larger alpha",
+    "polynomial_curvature_gate": "using pooled out-of-fold predictions from the best non-polynomial regression, split predictions into ten equal-frequency bins; pass only when at least three bins have absolute mean residual at least 10 percent of global MAE and the qualifying residuals include both signs",
+    "polynomial_minimum_mae_improvement_pct": 1.0
+  },
+  "excluded_features": [
+    {"feature": "current_block_trips", "reason": "is the target"},
+    {"feature": "same_block_citywide_or_other_zone_pickups", "reason": "not complete at prediction time"},
+    {"feature": "dropoff_fields", "reason": "occur during or after the target block"},
+    {"feature": "trip_distance_duration_fare_payment", "reason": "occur during or after the target block and are unavailable for zero-demand cells"},
+    {"feature": "unshifted_or_centered_rolling_statistics", "reason": "contain the target or future values"},
+    {"feature": "lag_2184_previous_52_weeks", "reason": "fold_1 training has no rows with this feature available"},
+    {"feature": "borough_as_model_input", "reason": "deterministic from zone_id and retained only for segment evaluation"},
+    {"feature": "zone_name_and_service_zone", "reason": "descriptive metadata, redundant with zone_id"},
+    {"feature": "weather_or_event_outcomes", "reason": "not present in the locked data source and event outcomes may be unknown at prediction time"},
+    {"feature": "validation_or_final_test_target_encoding", "reason": "would fit preprocessing on future outcomes"}
+  ]
+}

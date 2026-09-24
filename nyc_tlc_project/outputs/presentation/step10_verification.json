@@ -1,0 +1,60 @@
+{
+  "verified_at_utc": "2026-09-20T08:56:49.716749+00:00",
+  "passed": true,
+  "deck": {
+    "path": "deliverables\\NYC_TLC_Predictive_Analysis_Presentation.pptx",
+    "size_bytes": 118148,
+    "sha256": "eefb737194155a5c16bc174339cd1203c1ce8363bff50e236d6241ffa54a6a6b"
+  },
+  "checks": [
+    {
+      "check": "exists:NYC_TLC_Predictive_Analysis_Presentation.pptx",
+      "passed": true,
+      "value": 118148
+    },
+    {
+      "check": "exists:SPEAKER_NOTES.md",
+      "passed": true,
+      "value": 7660
+    },
+    {
+      "check": "exists:Q_AND_A.md",
+      "passed": true,
+      "value": 8846
+    },
+    {
+      "check": "slide_count",
+      "passed": true,
+      "value": 12
+    },
+    {
+      "check": "embedded_notes_count",
+      "passed": true,
+      "value": 12
+    },
+    {
+      "check": "native_chart_count",
+      "passed": true,
+      "value": 4
+    },
+    {
+      "check": "speaker_notes_cover_all_slides",
+      "passed": true,
+      "value": 12
+    },
+    {
+      "check": "qa_has_at_least_15_questions",
+      "passed": true,
+      "value": 20
+    },
+    {
+      "check": "key_final_metrics_present",
+      "passed": true,
+      "value": [
+        "16,22",
+        "20,22%",
+        "0,935"
+      ]
+    }
+  ]
+}

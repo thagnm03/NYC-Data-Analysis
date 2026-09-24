@@ -1,0 +1,81 @@
+{
+  "generated_at_utc": "2026-09-20T08:43:26.724004+00:00",
+  "python": "3.13.7",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+    "pandas": "2.3.3",
+    "numpy": "2.5.3",
+    "pyarrow": "23.0.1",
+    "duckdb": "1.5.5",
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2",
+    "scikit-learn": "1.9.1",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.1",
+    "jupyterlab": "4.6.3"
+  },
+  "files": {
+    "PROJECT_BRIEF.md": {
+      "sha256": "b33ef82e15185c657cfd113fe154f395bc7a7b2c1fa207d0828f6b03d91137f6",
+      "bytes": 8959
+    },
+    "CLEANING_LOG.md": {
+      "sha256": "4edf1cd74786df45dda87a6c3d698fa7325c7feb6eab5b29320ce899457ad43e",
+      "bytes": 3637
+    },
+    "DATA_DICTIONARY.md": {
+      "sha256": "5552e10e3b8c6b00819046e437ca15c9bb9786ef310093c3b9e9cfa00f34e1a3",
+      "bytes": 3264
+    },
+    "FINAL_REPORT.md": {
+      "sha256": "636b3451a7754c394131085a46658aa722e1a0d571c687e78de8ccfb258ffe5f",
+      "bytes": 16424
+    },
+    "README.md": {
+      "sha256": "52db861987486955ba20276af2f5935f22056236316fc1499544b8af1a8a9a63",
+      "bytes": 7962
+    },
+    "PROGRESS.md": {
+      "sha256": "5d75485a48728583d02dc5da4da82d21e80c1f1710d8ee49670bf4aeb51f49b1",
+      "bytes": 2031
+    },
+    "requirements-notebook.txt": {
+      "sha256": "f74f56e21531964ce88109ad84ceb8e7e265d0433bc669ae6efd809fe8b77427",
+      "bytes": 116
+    },
+    "requirements-lock.txt": {
+      "sha256": "23da85a790e17286eba93bb5623ef5486dacf46aee43e5516b903967dfa9e602",
+      "bytes": 2010
+    },
+    "notebooks/NYC_TLC_predictive_analysis.ipynb": {
+      "sha256": "c7b8bb00a5ad714802f02112220392ea9013dd32746b75d2d7e3d34f70ba9784",
+      "bytes": 13924
+    },
+    "scripts/run_pipeline.ps1": {
+      "sha256": "5ba2e4af856f60c79c06148dd13a06dad4c9c455638ac486c54bd43f801ef6ee",
+      "bytes": 3452
+    },
+    "scripts/verify_step9.py": {
+      "sha256": "37d68c014f34afcdd043b853bd2b7f19da67ea953b143e77fc2c44b3c8ad5dd4",
+      "bytes": 11701
+    },
+    "config/modeling_config.json": {
+      "sha256": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7",
+      "bytes": 10909
+    },
+    "config/training_config.json": {
+      "sha256": "3bda0eb733295ba242f196697dadf469d82f80c09ae29714b459351a52fcf181",
+      "bytes": 388
+    },
+    "config/final_evaluation_config.json": {
+      "sha256": "52bf5f6ba26e33f7698a434dcf3c24e4747d68a83941d527ecfc22be9e4d624e",
+      "bytes": 1316
+    }
+  },
+  "frozen_protocol_hashes": {
+    "config/modeling_config.json": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7",
+    "config/training_config.json": "3bda0eb733295ba242f196697dadf469d82f80c09ae29714b459351a52fcf181",
+    "outputs/modeling/model_selection.json": "10a2a7c394154e2313544c7785a5a386247d9c1295cd97241df82d36941a517f"
+  }
+}

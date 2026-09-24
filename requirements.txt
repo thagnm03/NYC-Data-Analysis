@@ -1,0 +1,7 @@
+pandas>=2.3,<3
+numpy>=2.0,<3
+pyarrow>=20,<24
+duckdb>=1.3,<2
+matplotlib>=3.10,<4
+seaborn>=0.13,<1
+scikit-learn>=1.7,<2

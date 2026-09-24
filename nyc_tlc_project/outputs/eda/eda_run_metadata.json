@@ -1,0 +1,9 @@
+{
+  "generated_at_utc": "2026-09-18T02:29:01.536159+00:00",
+  "config_file": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\config\\eda_config.json",
+  "panel_file": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\processed\\zone_4h_panel_development.parquet",
+  "panel_file_bytes": 1661453,
+  "pandas_version": "2.3.2",
+  "numpy_version": "2.2.6",
+  "matplotlib_version": "3.11.2"
+}

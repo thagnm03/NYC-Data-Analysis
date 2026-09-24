@@ -1,0 +1,144 @@
+{
+  "verified_at_utc": "2026-09-20T08:41:12.480317+00:00",
+  "success": true,
+  "scope": "development_rolling_validation_only",
+  "modeling_config_sha256": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7",
+  "validation_rows": 571590,
+  "models_evaluated": [
+    "baseline_previous_block",
+    "baseline_previous_day",
+    "baseline_previous_week",
+    "baseline_seasonal_mean_4w",
+    "simple_linear_regression",
+    "multiple_linear_regression",
+    "ridge_regression"
+  ],
+  "selected_model": "baseline_previous_week",
+  "polynomial_executed": false,
+  "final_test_rows_used": 0,
+  "checks_passed": 24,
+  "checks_total": 24,
+  "errors": [],
+  "checks": [
+    {
+      "check": "required_tables_exist",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "required_json_exists",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "required_figures_exist",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "validation_predictions_exist",
+      "passed": true,
+      "detail": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\outputs\\modeling\\validation_predictions.parquet"
+    },
+    {
+      "check": "modeling_config_checksum",
+      "passed": true,
+      "detail": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7"
+    },
+    {
+      "check": "development_only",
+      "passed": true,
+      "detail": "2025-12-31 20:00:00"
+    },
+    {
+      "check": "final_test_rows_used_zero",
+      "passed": true,
+      "detail": "summary and selection"
+    },
+    {
+      "check": "prediction_key_unique",
+      "passed": true,
+      "detail": "rows=571,590"
+    },
+    {
+      "check": "all_prediction_columns_exist",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "predictions_are_complete",
+      "passed": true,
+      "detail": "no null predictions"
+    },
+    {
+      "check": "predictions_are_nonnegative",
+      "passed": true,
+      "detail": "postprocessing applied"
+    },
+    {
+      "check": "validation_rows_match_locked_common_sample",
+      "passed": true,
+      "detail": "actual=571,590; expected=571,590"
+    },
+    {
+      "check": "validation_rows_match_summary",
+      "passed": true,
+      "detail": "rows=571,590"
+    },
+    {
+      "check": "baseline_definition_baseline_previous_block",
+      "passed": true,
+      "detail": "equals lag_1"
+    },
+    {
+      "check": "baseline_definition_baseline_previous_day",
+      "passed": true,
+      "detail": "equals lag_6"
+    },
+    {
+      "check": "baseline_definition_baseline_previous_week",
+      "passed": true,
+      "detail": "equals lag_42"
+    },
+    {
+      "check": "baseline_definition_baseline_seasonal_mean_4w",
+      "passed": true,
+      "detail": "equals seasonal_mean_4w"
+    },
+    {
+      "check": "fold_metrics_recompute_exactly",
+      "passed": true,
+      "detail": "errors=[]; rows=28"
+    },
+    {
+      "check": "mean_fold_metrics_use_unweighted_four_fold_mean",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "check": "ridge_alpha_selection_rule",
+      "passed": true,
+      "detail": "selected=1000.0"
+    },
+    {
+      "check": "model_selection_follows_locked_rules",
+      "passed": true,
+      "detail": "selected=baseline_previous_week; expected=baseline_previous_week"
+    },
+    {
+      "check": "polynomial_execution_matches_gate",
+      "passed": true,
+      "detail": "gate=False"
+    },
+    {
+      "check": "polynomial_prediction_presence_matches_execution",
+      "passed": true,
+      "detail": "column_present=False"
+    },
+    {
+      "check": "figures_have_nontrivial_size",
+      "passed": true,
+      "detail": "small=[]"
+    }
+  ]
+}

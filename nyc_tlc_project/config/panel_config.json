@@ -1,0 +1,15 @@
+{
+  "development_start": "2024-01-01 00:00:00",
+  "development_end_exclusive": "2026-01-01 00:00:00",
+  "eligibility_start": "2024-01-01 00:00:00",
+  "eligibility_end_exclusive": "2025-01-01 00:00:00",
+  "block_hours": 4,
+  "valid_pickup_zone_min": 1,
+  "valid_pickup_zone_max": 263,
+  "processed_dir": "../data/processed",
+  "output_dir": "../outputs/panel",
+  "interim_dir": "../data/interim",
+  "panel_filename": "zone_4h_panel_development.parquet",
+  "duckdb_threads": 4,
+  "duckdb_memory_limit": "8GB"
+}

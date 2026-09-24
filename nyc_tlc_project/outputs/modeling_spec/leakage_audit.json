@@ -1,0 +1,97 @@
+{
+  "audited_at_utc": "2026-09-18T02:45:54.645477+00:00",
+  "success": true,
+  "config_version": "1.0",
+  "config_sha256": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7",
+  "scope": "development_only",
+  "final_test_rows_used": 0,
+  "checks_passed": 17,
+  "checks_total": 17,
+  "checks": [
+    {
+      "check": "config_locked",
+      "passed": true,
+      "detail": "locked_before_model_fitting"
+    },
+    {
+      "check": "panel_starts_at_development_start",
+      "passed": true,
+      "detail": "2024-01-01 00:00:00"
+    },
+    {
+      "check": "panel_ends_before_development_cutoff",
+      "passed": true,
+      "detail": "2025-12-31 20:00:00"
+    },
+    {
+      "check": "no_final_test_rows",
+      "passed": true,
+      "detail": "final-test rows found: 0"
+    },
+    {
+      "check": "unique_zone_block_key",
+      "passed": true,
+      "detail": "rows=1,144,746"
+    },
+    {
+      "check": "nonnegative_target",
+      "passed": true,
+      "detail": "minimum target=0"
+    },
+    {
+      "check": "common_feature_warmup_is_exact",
+      "passed": true,
+      "detail": "expected=2024-01-29 00:00:00"
+    },
+    {
+      "check": "no_missing_features_after_warmup",
+      "passed": true,
+      "detail": "features=14"
+    },
+    {
+      "check": "all_target_history_strictly_precedes_target",
+      "passed": true,
+      "detail": "invalid=[]"
+    },
+    {
+      "check": "no_explicitly_excluded_feature_is_active",
+      "passed": true,
+      "detail": "intersection=[]"
+    },
+    {
+      "check": "rolling_folds_are_chronological_and_contiguous",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "check": "final_test_begins_at_development_cutoff",
+      "passed": true,
+      "detail": "2026-01-01 00:00:00"
+    },
+    {
+      "check": "empirical_alignment_lag_1",
+      "passed": true,
+      "detail": "matches same-zone backward shift"
+    },
+    {
+      "check": "empirical_alignment_lag_6",
+      "passed": true,
+      "detail": "matches same-zone backward shift"
+    },
+    {
+      "check": "empirical_alignment_lag_42",
+      "passed": true,
+      "detail": "matches same-zone backward shift"
+    },
+    {
+      "check": "empirical_alignment_lag_84",
+      "passed": true,
+      "detail": "matches same-zone backward shift"
+    },
+    {
+      "check": "empirical_alignment_lag_168",
+      "passed": true,
+      "detail": "matches same-zone backward shift"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "selected_model": "baseline_previous_week",
+  "selected_display_name": "Previous week",
+  "selection_reason": "no regression candidate passed every locked replacement rule",
+  "primary_baseline": "baseline_previous_week",
+  "primary_baseline_mean_fold_MAE": 16.390639243192133,
+  "selected_model_mean_fold_MAE": 16.390639243192133,
+  "selected_model_uplift_vs_previous_week_pct": 0.0,
+  "selected_ridge_alpha": 1000.0,
+  "polynomial_gate_passed": false,
+  "polynomial_executed": false,
+  "polynomial_retention_improvement_passed": false,
+  "development_only": true,
+  "final_test_rows_used": 0,
+  "modeling_config_sha256": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7"
+}

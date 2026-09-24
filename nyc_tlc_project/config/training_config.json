@@ -1,0 +1,11 @@
+{
+  "modeling_config_path": "modeling_config.json",
+  "expected_modeling_config_sha256": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7",
+  "output_dir": "../outputs/modeling",
+  "figure_dpi": 180,
+  "linear_regression_tolerance": 0.000001,
+  "ridge_solver": "lsqr",
+  "ridge_tolerance": 0.0001,
+  "ridge_max_iterations": 10000,
+  "prediction_float_dtype": "float64"
+}

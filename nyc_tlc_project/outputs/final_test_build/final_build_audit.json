@@ -1,0 +1,74 @@
+{
+  "built_at_utc": "2026-09-18T03:08:19.812085+00:00",
+  "success": true,
+  "scope": "final_test_2026_01_through_2026_05",
+  "checks_passed": 13,
+  "checks_total": 13,
+  "checks": [
+    {
+      "check": "frozen_modeling_config_hash",
+      "passed": true,
+      "detail": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7"
+    },
+    {
+      "check": "frozen_training_config_hash",
+      "passed": true,
+      "detail": "3bda0eb733295ba242f196697dadf469d82f80c09ae29714b459351a52fcf181"
+    },
+    {
+      "check": "frozen_selection_hash",
+      "passed": true,
+      "detail": "10a2a7c394154e2313544c7785a5a386247d9c1295cd97241df82d36941a517f"
+    },
+    {
+      "check": "five_expected_raw_months",
+      "passed": true,
+      "detail": "['2026-01', '2026-02', '2026-03', '2026-04', '2026-05']"
+    },
+    {
+      "check": "zone_universe_fixed_at_261",
+      "passed": true,
+      "detail": "zones=261"
+    },
+    {
+      "check": "balanced_panel_row_count",
+      "passed": true,
+      "detail": "rows=236,466"
+    },
+    {
+      "check": "balanced_panel_block_count",
+      "passed": true,
+      "detail": "blocks=906"
+    },
+    {
+      "check": "final_start_exact",
+      "passed": true,
+      "detail": "2026-01-01 00:00:00"
+    },
+    {
+      "check": "final_end_exact",
+      "passed": true,
+      "detail": "2026-05-31 20:00:00"
+    },
+    {
+      "check": "panel_target_reconciles",
+      "passed": true,
+      "detail": "panel=18,969,497; excluded=0"
+    },
+    {
+      "check": "final_features_complete",
+      "passed": true,
+      "detail": "rows=236,466"
+    },
+    {
+      "check": "final_frame_matches_panel_rows",
+      "passed": true,
+      "detail": "rows=236,466"
+    },
+    {
+      "check": "final_target_nonnegative",
+      "passed": true,
+      "detail": "minimum=0"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "formal_selected_method_before_final_test": "baseline_previous_week",
+  "formal_selected_method_after_final_test": "baseline_previous_week",
+  "selection_changed": false,
+  "secondary_prespecified_benchmark": "baseline_seasonal_mean_4w",
+  "diagnostic_regression": "ridge_regression",
+  "empirical_lowest_final_MAE_method_descriptive_only": "ridge_regression",
+  "final_test_not_used_for_reselection": true,
+  "modeling_config_sha256": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7",
+  "training_config_sha256": "3bda0eb733295ba242f196697dadf469d82f80c09ae29714b459351a52fcf181",
+  "model_selection_sha256": "10a2a7c394154e2313544c7785a5a386247d9c1295cd97241df82d36941a517f"
+}

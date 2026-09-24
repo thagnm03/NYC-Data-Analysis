@@ -1,0 +1,159 @@
+{
+  "verified_at_utc": "2026-09-20T08:41:19.175890+00:00",
+  "success": true,
+  "scope": "frozen_final_test_2026_01_through_2026_05",
+  "test_rows": 236466,
+  "test_target_sum": 18969497,
+  "formal_selected_method": "baseline_previous_week",
+  "selection_changed": false,
+  "checks_passed": 29,
+  "checks_total": 29,
+  "errors": [],
+  "checks": [
+    {
+      "check": "required_tables_exist",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "required_json_exists",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "required_figures_exist",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "final_predictions_exist",
+      "passed": true,
+      "detail": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\outputs\\final_evaluation\\final_predictions.parquet"
+    },
+    {
+      "check": "final_build_audit_passed",
+      "passed": true,
+      "detail": "checks=13/13"
+    },
+    {
+      "check": "modeling_hash_frozen",
+      "passed": true,
+      "detail": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7"
+    },
+    {
+      "check": "training_hash_frozen",
+      "passed": true,
+      "detail": "3bda0eb733295ba242f196697dadf469d82f80c09ae29714b459351a52fcf181"
+    },
+    {
+      "check": "selection_hash_frozen",
+      "passed": true,
+      "detail": "10a2a7c394154e2313544c7785a5a386247d9c1295cd97241df82d36941a517f"
+    },
+    {
+      "check": "formal_selection_unchanged",
+      "passed": true,
+      "detail": "baseline_previous_week"
+    },
+    {
+      "check": "final_not_used_for_reselection",
+      "passed": true,
+      "detail": "frozen decision flag"
+    },
+    {
+      "check": "ridge_alpha_frozen",
+      "passed": true,
+      "detail": "1000.0"
+    },
+    {
+      "check": "final_period_exact",
+      "passed": true,
+      "detail": "2026-01-01 00:00:00 to 2026-05-31 20:00:00"
+    },
+    {
+      "check": "final_panel_balanced",
+      "passed": true,
+      "detail": "rows=236,466"
+    },
+    {
+      "check": "final_frame_matches_panel_keys",
+      "passed": true,
+      "detail": "rows=236,466"
+    },
+    {
+      "check": "final_features_ready",
+      "passed": true,
+      "detail": "all final rows have complete history"
+    },
+    {
+      "check": "final_history_features_recomputed",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "check": "prediction_rows_match_final_frame",
+      "passed": true,
+      "detail": "rows=236,466"
+    },
+    {
+      "check": "prediction_key_unique",
+      "passed": true,
+      "detail": "zone-block unique"
+    },
+    {
+      "check": "predictions_complete_and_nonnegative",
+      "passed": true,
+      "detail": "methods=5"
+    },
+    {
+      "check": "final_baseline_baseline_previous_block",
+      "passed": true,
+      "detail": "equals lag_1"
+    },
+    {
+      "check": "final_baseline_baseline_previous_day",
+      "passed": true,
+      "detail": "equals lag_6"
+    },
+    {
+      "check": "final_baseline_baseline_previous_week",
+      "passed": true,
+      "detail": "equals lag_42"
+    },
+    {
+      "check": "final_baseline_baseline_seasonal_mean_4w",
+      "passed": true,
+      "detail": "equals seasonal_mean_4w"
+    },
+    {
+      "check": "segments_defined_from_development_only",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "check": "final_metrics_recompute_exactly",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "check": "empirical_rank_is_descriptive_only",
+      "passed": true,
+      "detail": "ridge_regression"
+    },
+    {
+      "check": "formal_error_columns_exact",
+      "passed": true,
+      "detail": "baseline_previous_week"
+    },
+    {
+      "check": "summary_row_count_and_target",
+      "passed": true,
+      "detail": "rows=236,466; target=18,969,497"
+    },
+    {
+      "check": "figures_have_nontrivial_size",
+      "passed": true,
+      "detail": "small=[]"
+    }
+  ]
+}

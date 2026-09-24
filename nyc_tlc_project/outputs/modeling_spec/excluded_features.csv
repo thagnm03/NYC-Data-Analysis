@@ -1,0 +1,11 @@
+feature,reason
+current_block_trips,is the target
+same_block_citywide_or_other_zone_pickups,not complete at prediction time
+dropoff_fields,occur during or after the target block
+trip_distance_duration_fare_payment,occur during or after the target block and are unavailable for zero-demand cells
+unshifted_or_centered_rolling_statistics,contain the target or future values
+lag_2184_previous_52_weeks,fold_1 training has no rows with this feature available
+borough_as_model_input,deterministic from zone_id and retained only for segment evaluation
+zone_name_and_service_zone,"descriptive metadata, redundant with zone_id"
+weather_or_event_outcomes,not present in the locked data source and event outcomes may be unknown at prediction time
+validation_or_final_test_target_encoding,would fit preprocessing on future outcomes

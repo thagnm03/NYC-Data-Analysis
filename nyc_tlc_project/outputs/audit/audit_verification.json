@@ -1,0 +1,11 @@
+{
+  "verified_at_utc": "2026-09-20T08:41:00.485471+00:00",
+  "success": true,
+  "development_months": 24,
+  "raw_rows": 89892322,
+  "target_valid_before_dedup": 89642446,
+  "target_valid_exact_duplicates": 5,
+  "expected_clean_rows_for_panel": 89642441,
+  "final_test_content_absent": true,
+  "errors": []
+}

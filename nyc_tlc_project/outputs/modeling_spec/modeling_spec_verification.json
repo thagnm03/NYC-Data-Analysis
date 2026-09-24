@@ -1,0 +1,187 @@
+{
+  "verified_at_utc": "2026-09-20T08:42:13.309181+00:00",
+  "success": true,
+  "config_version": "1.0",
+  "config_sha256": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7",
+  "scope": "development_only",
+  "final_test_rows_used": 0,
+  "rows": 1144746,
+  "feature_ready_rows": 1100898,
+  "active_feature_count_including_zone_id": 15,
+  "fold_count": 4,
+  "checks_passed": 34,
+  "checks_total": 34,
+  "errors": [],
+  "checks": [
+    {
+      "check": "required_spec_outputs_exist",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "modeling_frame_exists",
+      "passed": true,
+      "detail": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\processed\\modeling_frame_development.parquet"
+    },
+    {
+      "check": "frame_keys_match_panel",
+      "passed": true,
+      "detail": "frame_rows=1,144,746; panel_rows=1,144,746"
+    },
+    {
+      "check": "target_is_unchanged",
+      "passed": true,
+      "detail": "target_sum=89,642,441"
+    },
+    {
+      "check": "unique_zone_block_key",
+      "passed": true,
+      "detail": "no duplicate key expected"
+    },
+    {
+      "check": "development_window_only",
+      "passed": true,
+      "detail": "2024-01-01 00:00:00 to 2025-12-31 20:00:00"
+    },
+    {
+      "check": "no_final_test_rows",
+      "passed": true,
+      "detail": "2026+ rows=0"
+    },
+    {
+      "check": "feature_ready_flag_matches_warmup",
+      "passed": true,
+      "detail": "first_ready=2024-01-29 00:00:00"
+    },
+    {
+      "check": "active_features_complete_when_ready",
+      "passed": true,
+      "detail": "ready_rows=1,100,898"
+    },
+    {
+      "check": "calendar_definition_month_of_year",
+      "passed": true,
+      "detail": "recomputed from block_start/locked calendar"
+    },
+    {
+      "check": "calendar_definition_day_of_week",
+      "passed": true,
+      "detail": "recomputed from block_start/locked calendar"
+    },
+    {
+      "check": "calendar_definition_block_hour",
+      "passed": true,
+      "detail": "recomputed from block_start/locked calendar"
+    },
+    {
+      "check": "calendar_definition_is_holiday",
+      "passed": true,
+      "detail": "recomputed from block_start/locked calendar"
+    },
+    {
+      "check": "calendar_definition_time_index_days",
+      "passed": true,
+      "detail": "recomputed from block_start/locked calendar"
+    },
+    {
+      "check": "history_definition_lag_1",
+      "passed": true,
+      "detail": "recomputed independently from prior same-zone targets"
+    },
+    {
+      "check": "history_definition_lag_6",
+      "passed": true,
+      "detail": "recomputed independently from prior same-zone targets"
+    },
+    {
+      "check": "history_definition_lag_42",
+      "passed": true,
+      "detail": "recomputed independently from prior same-zone targets"
+    },
+    {
+      "check": "history_definition_lag_84",
+      "passed": true,
+      "detail": "recomputed independently from prior same-zone targets"
+    },
+    {
+      "check": "history_definition_lag_168",
+      "passed": true,
+      "detail": "recomputed independently from prior same-zone targets"
+    },
+    {
+      "check": "history_definition_seasonal_mean_4w",
+      "passed": true,
+      "detail": "recomputed independently from prior same-zone targets"
+    },
+    {
+      "check": "history_definition_recent_mean_6",
+      "passed": true,
+      "detail": "recomputed independently from prior same-zone targets"
+    },
+    {
+      "check": "history_definition_recent_mean_42",
+      "passed": true,
+      "detail": "recomputed independently from prior same-zone targets"
+    },
+    {
+      "check": "history_definition_recent_std_42",
+      "passed": true,
+      "detail": "recomputed independently from prior same-zone targets"
+    },
+    {
+      "check": "availability_matrix_matches_active_features",
+      "passed": true,
+      "detail": "features=15"
+    },
+    {
+      "check": "availability_matrix_has_no_target_block_use",
+      "passed": true,
+      "detail": "all active features must be pre-target"
+    },
+    {
+      "check": "history_requires_positive_offset",
+      "passed": true,
+      "detail": "minimum source offset >= 1 block"
+    },
+    {
+      "check": "all_model_features_exist",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "all_baseline_columns_exist",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "excluded_features_not_active",
+      "passed": true,
+      "detail": "intersection=[]"
+    },
+    {
+      "check": "preprocessing_fit_is_training_only",
+      "passed": true,
+      "detail": "encoder and scaler policy"
+    },
+    {
+      "check": "fold_table_matches_locked_rolling_windows",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "check": "validation_covers_2025_once",
+      "passed": true,
+      "detail": "validation_rows=571,590"
+    },
+    {
+      "check": "config_checksum_matches_build",
+      "passed": true,
+      "detail": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7"
+    },
+    {
+      "check": "builder_leakage_audit_passed",
+      "passed": true,
+      "detail": "checks=17/17"
+    }
+  ]
+}

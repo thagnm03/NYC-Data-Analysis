@@ -1,0 +1,16 @@
+{
+  "dataset_name": "NYC TLC Yellow Taxi Trip Records",
+  "start_month": "2024-01",
+  "end_month": "2026-05",
+  "base_url": "https://d37ci6vzurychx.cloudfront.net/trip-data",
+  "zone_lookup_url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv",
+  "raw_dir": "../data/raw",
+  "cache_dirs": [
+    "../../pilots/nyc_tlc/data/raw"
+  ],
+  "download_workers": 3,
+  "request_timeout_seconds": 180,
+  "download_retries": 4,
+  "chunk_size_mib": 1,
+  "user_agent": "nyc-tlc-predictive-analysis-course-project/1.0"
+}

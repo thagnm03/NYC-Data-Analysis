@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-09-18T02:07:44.564427+00:00",
+  "project_config": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\config\\project_config.json",
+  "audit_config": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\config\\audit_config.json",
+  "output_dir": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\outputs\\audit",
+  "duckdb_version": "1.5.5",
+  "pandas_version": "2.3.3",
+  "files": [
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-01.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-02.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-03.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-04.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-05.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-06.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-07.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-08.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-09.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-10.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-11.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2024-12.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-01.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-02.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-03.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-04.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-05.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-06.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-07.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-08.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-09.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-10.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-11.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2025-12.parquet"
+  ],
+  "excluded_final_test_files": [
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2026-01.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2026-02.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2026-03.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2026-04.parquet",
+    "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\yellow_tripdata_2026-05.parquet"
+  ]
+}

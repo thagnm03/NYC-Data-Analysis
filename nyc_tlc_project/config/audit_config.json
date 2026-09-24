@@ -1,0 +1,14 @@
+{
+  "development_start_month": "2024-01",
+  "development_end_month": "2025-12",
+  "output_dir": "../outputs/audit",
+  "interim_dir": "../data/interim",
+  "duckdb_threads": 4,
+  "duckdb_memory_limit": "8GB",
+  "valid_pickup_zone_min": 1,
+  "valid_pickup_zone_max": 263,
+  "semantic_zone_buckets": [264, 265],
+  "duration_extreme_hours": 6,
+  "distance_extreme_miles": 200,
+  "passenger_count_extreme": 8
+}

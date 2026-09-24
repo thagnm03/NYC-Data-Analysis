@@ -1,0 +1,16 @@
+{
+  "panel_path": "../data/processed/zone_4h_panel_development.parquet",
+  "output_dir": "../outputs/eda",
+  "figure_dpi": 180,
+  "development_start": "2024-01-01 00:00:00",
+  "development_end_exclusive": "2026-01-01 00:00:00",
+  "activity_tier_labels": ["Low", "Medium", "High"],
+  "lags_in_blocks": {
+    "previous_block": 1,
+    "previous_day": 6,
+    "previous_week": 42,
+    "previous_2_weeks": 84,
+    "previous_4_weeks": 168,
+    "previous_52_weeks": 2184
+  }
+}

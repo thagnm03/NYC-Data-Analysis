@@ -1,0 +1,11 @@
+data/raw/*.parquet
+data/raw/*.csv
+data/raw/*.part
+data/interim/
+data/processed/
+# Keep compact CSV/JSON/PNG results in version control; large binary predictions
+# are covered by the repository-level .gitignore.
+*.duckdb
+.mplconfig/
+__pycache__/
+*.py[cod]

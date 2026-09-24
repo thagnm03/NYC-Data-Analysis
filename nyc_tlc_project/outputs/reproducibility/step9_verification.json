@@ -1,0 +1,89 @@
+{
+  "verified_at_utc": "2026-09-20T08:43:26.900595+00:00",
+  "success": true,
+  "checks_passed": 16,
+  "checks_total": 16,
+  "errors": [],
+  "checks": [
+    {
+      "check": "step9_files_exist",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "notebook_format",
+      "passed": true,
+      "detail": "nbformat=4"
+    },
+    {
+      "check": "notebook_has_narrative_and_code",
+      "passed": true,
+      "detail": "markdown=10; code=12"
+    },
+    {
+      "check": "notebook_code_compiles",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "check": "notebook_is_read_only_presentation",
+      "passed": true,
+      "detail": "prohibited=[]"
+    },
+    {
+      "check": "executed_notebook_passes",
+      "passed": true,
+      "detail": "code_cells=12; errors=[]"
+    },
+    {
+      "check": "final_report_complete",
+      "passed": true,
+      "detail": "missing_sections=[]"
+    },
+    {
+      "check": "readme_traceability_map",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "readme_pipeline_commands",
+      "passed": true,
+      "detail": "all/verify/notebook commands documented"
+    },
+    {
+      "check": "frozen_hashes_unchanged",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "check": "upstream_verifiers_pass",
+      "passed": true,
+      "detail": "errors=[]"
+    },
+    {
+      "check": "headline_data_reconciles",
+      "passed": true,
+      "detail": "audit/panel/EDA/final summaries"
+    },
+    {
+      "check": "headline_metrics_reconcile",
+      "passed": true,
+      "detail": "development and final metric tables"
+    },
+    {
+      "check": "frozen_decision_preserved",
+      "passed": true,
+      "detail": "formal selection unchanged"
+    },
+    {
+      "check": "report_contains_traced_headlines",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "notebook_environment_available",
+      "passed": true,
+      "detail": "missing=[]"
+    }
+  ]
+}

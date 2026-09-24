@@ -1,0 +1,4 @@
+model,display_name,mean_MAE,mean_RMSE,uplift_vs_previous_week_pct,fold_MAE_wins_vs_previous_week,mean_low_tier_MAE,baseline_mean_low_tier_MAE,low_tier_MAE_ratio,passes_mean_MAE_rule,passes_three_of_four_folds_rule,passes_low_tier_rule,complexity_explainable,qualified_to_replace_baseline,complexity_rank
+simple_linear_regression,Simple linear regression,16.993765343808377,56.481269317273345,-3.679698464882953,0,2.47002106870131,1.0440134925923283,2.3658899872722396,False,False,False,True,False,1
+multiple_linear_regression,Multiple linear regression,16.54702843184532,47.895238889767754,-0.9541372141305757,3,1.5920766699996776,1.0440134925923283,1.524957944792922,False,True,False,True,False,2
+ridge_regression,Ridge regression,14.970951498943466,45.71919277470071,8.66157642288623,3,1.8213162831386682,1.0440134925923283,1.7445332805194549,True,True,False,True,False,3

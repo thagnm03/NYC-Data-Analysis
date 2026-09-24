@@ -1,0 +1,16 @@
+{
+  "verified_at_utc": "2026-09-20T08:41:02.923204+00:00",
+  "success": true,
+  "development_only": true,
+  "final_test_rows_used": 0,
+  "table_count": 10,
+  "figure_count": 8,
+  "target_sum": 89642441,
+  "zones": 261,
+  "tier_counts": {
+    "Low": 87,
+    "Medium": 87,
+    "High": 87
+  },
+  "errors": []
+}

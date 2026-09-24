@@ -1,0 +1,14 @@
+{
+  "best_non_polynomial_regression": "ridge_regression",
+  "pooled_oof_global_MAE": 14.97090644848816,
+  "threshold_absolute_mean_residual": 1.4970906448488162,
+  "qualifying_deciles": 4,
+  "qualifying_has_positive_residual": true,
+  "qualifying_has_negative_residual": false,
+  "gate_passed": false,
+  "polynomial_executed": false,
+  "best_non_polynomial_mean_fold_MAE": 14.970951498943466,
+  "polynomial_mean_fold_MAE": null,
+  "polynomial_improvement_vs_best_non_polynomial_pct": null,
+  "minimum_required_improvement_pct": 1.0
+}

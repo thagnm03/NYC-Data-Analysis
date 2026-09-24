@@ -1,0 +1,51 @@
+zone_id,zone_name,borough,block_start,trips,pred__baseline_previous_week,formal_error,formal_absolute_error,activity_tier,peak_period
+79,East Village,Manhattan,2026-01-08 00:00:00,153,2027.0,1874.0,1874.0,High,Off-peak
+79,East Village,Manhattan,2026-01-01 00:00:00,2027,190.0,-1837.0,1837.0,High,Off-peak
+132,JFK Airport,Queens,2026-02-01 20:00:00,1842,14.0,-1828.0,1828.0,High,Off-peak
+132,JFK Airport,Queens,2026-02-23 20:00:00,7,1807.0,1800.0,1800.0,High,Off-peak
+132,JFK Airport,Queens,2026-03-01 20:00:00,1923,186.0,-1737.0,1737.0,High,Off-peak
+132,JFK Airport,Queens,2026-02-23 16:00:00,23,1749.0,1726.0,1726.0,High,Peak
+161,Midtown Center,Manhattan,2026-03-02 16:00:00,2011,293.0,-1718.0,1718.0,High,Peak
+132,JFK Airport,Queens,2026-02-01 16:00:00,1586,63.0,-1523.0,1523.0,High,Off-peak
+132,JFK Airport,Queens,2026-01-25 20:00:00,14,1524.0,1510.0,1510.0,High,Off-peak
+237,Upper East Side South,Manhattan,2026-03-02 16:00:00,1856,358.0,-1498.0,1498.0,High,Peak
+236,Upper East Side North,Manhattan,2026-03-02 12:00:00,1622,134.0,-1488.0,1488.0,High,Off-peak
+236,Upper East Side North,Manhattan,2026-03-02 08:00:00,1501,63.0,-1438.0,1438.0,High,Off-peak
+237,Upper East Side South,Manhattan,2026-03-02 12:00:00,1542,168.0,-1374.0,1374.0,High,Off-peak
+162,Midtown East,Manhattan,2026-03-02 16:00:00,1616,243.0,-1373.0,1373.0,High,Peak
+79,East Village,Manhattan,2026-01-10 00:00:00,2299,962.0,-1337.0,1337.0,High,Off-peak
+132,JFK Airport,Queens,2026-03-02 20:00:00,1339,7.0,-1332.0,1332.0,High,Off-peak
+79,East Village,Manhattan,2026-05-31 00:00:00,2494,1206.0,-1288.0,1288.0,High,Off-peak
+132,JFK Airport,Queens,2026-03-02 16:00:00,1309,23.0,-1286.0,1286.0,High,Peak
+132,JFK Airport,Queens,2026-02-22 20:00:00,186,1463.0,1277.0,1277.0,High,Off-peak
+161,Midtown Center,Manhattan,2026-03-02 20:00:00,1533,261.0,-1272.0,1272.0,High,Off-peak
+230,Times Sq/Theatre District,Manhattan,2026-01-07 20:00:00,1256,0.0,-1256.0,1256.0,High,Peak
+132,JFK Airport,Queens,2026-02-23 12:00:00,34,1275.0,1241.0,1241.0,High,Off-peak
+236,Upper East Side North,Manhattan,2026-03-02 16:00:00,1571,337.0,-1234.0,1234.0,High,Peak
+236,Upper East Side North,Manhattan,2026-01-08 08:00:00,1551,345.0,-1206.0,1206.0,High,Off-peak
+138,LaGuardia Airport,Queens,2026-03-01 20:00:00,1203,3.0,-1200.0,1200.0,High,Off-peak
+237,Upper East Side South,Manhattan,2026-03-02 08:00:00,1250,56.0,-1194.0,1194.0,High,Off-peak
+79,East Village,Manhattan,2026-04-05 00:00:00,1830,3020.0,1190.0,1190.0,High,Off-peak
+138,LaGuardia Airport,Queens,2026-02-23 20:00:00,1,1191.0,1190.0,1190.0,High,Off-peak
+236,Upper East Side North,Manhattan,2026-02-01 12:00:00,1428,243.0,-1185.0,1185.0,High,Off-peak
+237,Upper East Side South,Manhattan,2026-05-25 16:00:00,843,2021.0,1178.0,1178.0,High,Peak
+132,JFK Airport,Queens,2026-01-25 16:00:00,63,1240.0,1177.0,1177.0,High,Off-peak
+161,Midtown Center,Manhattan,2026-05-25 16:00:00,819,1996.0,1177.0,1177.0,High,Peak
+237,Upper East Side South,Manhattan,2026-02-01 12:00:00,1425,254.0,-1171.0,1171.0,High,Off-peak
+132,JFK Airport,Queens,2026-03-01 16:00:00,1651,486.0,-1165.0,1165.0,High,Off-peak
+132,JFK Airport,Queens,2026-01-02 20:00:00,1466,313.0,-1153.0,1153.0,High,Peak
+236,Upper East Side North,Manhattan,2026-05-25 12:00:00,867,2020.0,1153.0,1153.0,High,Off-peak
+132,JFK Airport,Queens,2026-03-02 12:00:00,1177,34.0,-1143.0,1143.0,High,Off-peak
+237,Upper East Side South,Manhattan,2026-05-25 12:00:00,937,2065.0,1128.0,1128.0,High,Off-peak
+237,Upper East Side South,Manhattan,2026-01-08 16:00:00,1774,674.0,-1100.0,1100.0,High,Peak
+161,Midtown Center,Manhattan,2026-01-08 20:00:00,1594,507.0,-1087.0,1087.0,High,Peak
+161,Midtown Center,Manhattan,2026-03-02 12:00:00,1218,133.0,-1085.0,1085.0,High,Off-peak
+161,Midtown Center,Manhattan,2026-02-16 20:00:00,433,1505.0,1072.0,1072.0,High,Off-peak
+161,Midtown Center,Manhattan,2026-01-08 16:00:00,1993,932.0,-1061.0,1061.0,High,Peak
+138,LaGuardia Airport,Queens,2026-02-23 16:00:00,2,1034.0,1032.0,1032.0,High,Peak
+79,East Village,Manhattan,2026-05-24 00:00:00,1206,2237.0,1031.0,1031.0,High,Off-peak
+79,East Village,Manhattan,2026-04-12 00:00:00,2857,1830.0,-1027.0,1027.0,High,Off-peak
+148,Lower East Side,Manhattan,2026-01-08 00:00:00,103,1129.0,1026.0,1026.0,High,Off-peak
+148,Lower East Side,Manhattan,2026-01-01 00:00:00,1129,108.0,-1021.0,1021.0,High,Off-peak
+237,Upper East Side South,Manhattan,2026-01-08 08:00:00,1307,286.0,-1021.0,1021.0,High,Off-peak
+236,Upper East Side North,Manhattan,2026-01-08 12:00:00,1726,707.0,-1019.0,1019.0,High,Peak

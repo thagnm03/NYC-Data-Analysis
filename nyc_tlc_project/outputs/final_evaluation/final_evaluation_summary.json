@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-09-20T08:27:00.400489+00:00",
+  "scope": "frozen_final_test_2026_01_through_2026_05",
+  "test_rows": 236466,
+  "test_target_sum": 18969497,
+  "formal_selected_method": "baseline_previous_week",
+  "formal_selected_method_MAE": 16.217599993233698,
+  "formal_selected_method_RMSE": 55.73758761034614,
+  "formal_selected_method_WAPE_pct": 20.216197614517665,
+  "secondary_benchmark": "baseline_seasonal_mean_4w",
+  "secondary_benchmark_MAE": 14.643596753867364,
+  "diagnostic_regression": "ridge_regression",
+  "diagnostic_regression_MAE": 14.174000220475621,
+  "frozen_ridge_alpha": 1000.0,
+  "ridge_training_rows": 1100898,
+  "ridge_transformed_features": 293,
+  "empirical_lowest_final_MAE_method_descriptive_only": "ridge_regression",
+  "frozen_decision_changed": false,
+  "ridge_fit_seconds": 3.1571093999955337,
+  "elapsed_seconds": 7.561481100012315
+}

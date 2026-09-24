@@ -1,0 +1,87 @@
+{
+  "generated_at_utc": "2026-09-18T02:07:44.564427+00:00",
+  "scope": "development_only",
+  "development_period": {
+    "start_month": "2024-01",
+    "end_month": "2025-12",
+    "months": 24
+  },
+  "final_test_excluded": {
+    "start_month": "2026-01",
+    "end_month": "2026-05"
+  },
+  "raw_rows": 89892322,
+  "target_valid_rows": 89642446,
+  "target_valid_pct": 99.72202742743701,
+  "schema_variants": 2,
+  "columns_union": [
+    "Airport_fee",
+    "DOLocationID",
+    "PULocationID",
+    "RatecodeID",
+    "VendorID",
+    "cbd_congestion_fee",
+    "congestion_surcharge",
+    "extra",
+    "fare_amount",
+    "improvement_surcharge",
+    "mta_tax",
+    "passenger_count",
+    "payment_type",
+    "store_and_fwd_flag",
+    "tip_amount",
+    "tolls_amount",
+    "total_amount",
+    "tpep_dropoff_datetime",
+    "tpep_pickup_datetime",
+    "trip_distance"
+  ],
+  "audit_totals": {
+    "hash_duplicate_rows": 5,
+    "dropoff_before_pickup": 3810,
+    "duration_nonpositive": 559814,
+    "duration_over_threshold": 36939,
+    "pickup_outside_file_month": 634,
+    "pu_zone_outside_1_265": 0,
+    "do_zone_outside_1_265": 0,
+    "pu_semantic_bucket": 249244,
+    "do_semantic_bucket": 694524,
+    "pu_not_modeling_zone": 249244,
+    "distance_nonpositive": 2179263,
+    "distance_over_threshold": 3380,
+    "fare_negative": 3579644,
+    "total_negative": 1583065,
+    "passenger_nonpositive": 661416,
+    "passenger_over_threshold": 70,
+    "target_excluded_rows": 249876
+  },
+  "verified_exact_duplicate_rows": 5,
+  "target_valid_exact_duplicate_rows": 5,
+  "zone_lookup": {
+    "file": "E:\\SV\\Nam 6\\DS111\\Do An\\nyc_tlc_project\\data\\raw\\taxi_zone_lookup.csv",
+    "rows": 265,
+    "columns": [
+      "LocationID",
+      "Borough",
+      "Zone",
+      "service_zone"
+    ],
+    "location_id_null": 0,
+    "location_id_duplicates": 0,
+    "location_id_min": 1,
+    "location_id_max": 265,
+    "contains_264_unknown": true,
+    "contains_265_outside_nyc": true,
+    "borough_counts": {
+      "Queens": 69,
+      "Manhattan": 69,
+      "Brooklyn": 61,
+      "Bronx": 43,
+      "Staten Island": 20,
+      "EWR": 1,
+      "Unknown": 1,
+      "nan": 1
+    }
+  },
+  "elapsed_seconds": 95.18307040003128
+}

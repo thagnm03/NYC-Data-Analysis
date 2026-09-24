@@ -1,0 +1,30 @@
+{
+  "generated_at_utc": "2026-09-18T02:57:29.143595+00:00",
+  "scope": "development_rolling_validation_only",
+  "modeling_config_sha256": "9a70f5987d653abef71ede2a20ce31a3801339b8c0dab8ab74a3096865130fe7",
+  "validation_rows": 571590,
+  "fold_count": 4,
+  "models_evaluated": [
+    "baseline_previous_block",
+    "baseline_previous_day",
+    "baseline_previous_week",
+    "baseline_seasonal_mean_4w",
+    "simple_linear_regression",
+    "multiple_linear_regression",
+    "ridge_regression"
+  ],
+  "selected_ridge_alpha": 1000.0,
+  "polynomial_gate_passed": false,
+  "polynomial_executed": false,
+  "selected_model": "baseline_previous_week",
+  "selected_model_mean_fold_MAE": 16.390639243192133,
+  "selected_model_uplift_vs_previous_week_pct": 0.0,
+  "final_test_rows_used": 0,
+  "elapsed_seconds": 74.73379720002413,
+  "versions": {
+    "pandas": "2.3.2",
+    "numpy": "2.2.6",
+    "scikit_learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  }
+}
