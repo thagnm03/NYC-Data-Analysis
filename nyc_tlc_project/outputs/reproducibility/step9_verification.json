@@ -1,9 +1,11 @@
 {
-  "verified_at_utc": "2026-09-20T08:43:26.900595+00:00",
-  "success": true,
-  "checks_passed": 16,
+  "verified_at_utc": "2026-10-07T14:43:06.625289+00:00",
+  "success": false,
+  "checks_passed": 15,
   "checks_total": 16,
-  "errors": [],
+  "errors": [
+    "missing=['nbformat', 'nbclient', 'nbconvert', 'jupyterlab']"
+  ],
   "checks": [
     {
       "check": "step9_files_exist",
@@ -82,8 +84,8 @@
     },
     {
       "check": "notebook_environment_available",
-      "passed": true,
-      "detail": "missing=[]"
+      "passed": false,
+      "detail": "missing=['nbformat', 'nbclient', 'nbconvert', 'jupyterlab']"
     }
   ]
 }

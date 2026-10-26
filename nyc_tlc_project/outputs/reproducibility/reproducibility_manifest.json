@@ -1,19 +1,19 @@
 {
-  "generated_at_utc": "2026-09-20T08:43:26.724004+00:00",
-  "python": "3.13.7",
-  "platform": "Windows-10-10.0.19045-SP0",
+  "generated_at_utc": "2026-10-07T14:43:06.582758+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
   "packages": {
-    "pandas": "2.3.3",
-    "numpy": "2.5.3",
-    "pyarrow": "23.0.1",
-    "duckdb": "1.5.5",
-    "matplotlib": "3.11.2",
-    "seaborn": "0.13.2",
-    "scikit-learn": "1.9.1",
-    "nbformat": "5.11.1",
-    "nbclient": "0.11.0",
-    "nbconvert": "7.17.1",
-    "jupyterlab": "4.6.3"
+    "pandas": "3.0.1",
+    "numpy": "2.3.5",
+    "pyarrow": null,
+    "duckdb": null,
+    "matplotlib": null,
+    "seaborn": null,
+    "scikit-learn": null,
+    "nbformat": null,
+    "nbclient": null,
+    "nbconvert": null,
+    "jupyterlab": null
   },
   "files": {
     "PROJECT_BRIEF.md": {
@@ -33,12 +33,12 @@
       "bytes": 16424
     },
     "README.md": {
-      "sha256": "52db861987486955ba20276af2f5935f22056236316fc1499544b8af1a8a9a63",
-      "bytes": 7962
+      "sha256": "ac6409ac829dc64465c442a6e17a5c7e2e988adf6018b0877ac5f5f258dbdf44",
+      "bytes": 8581
     },
     "PROGRESS.md": {
-      "sha256": "5d75485a48728583d02dc5da4da82d21e80c1f1710d8ee49670bf4aeb51f49b1",
-      "bytes": 2031
+      "sha256": "fab4b6b5331e8a2b525756e45530ccb58470dca50f69173461afe25d0cba4404",
+      "bytes": 2034
     },
     "requirements-notebook.txt": {
       "sha256": "f74f56e21531964ce88109ad84ceb8e7e265d0433bc669ae6efd809fe8b77427",
